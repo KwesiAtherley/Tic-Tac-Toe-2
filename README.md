@@ -1,4 +1,6 @@
-# tic-tac-toe-client
+# tic-tac-toe-client-2
+
+### My first Tic Tac Toe project was done in four days after a two week introduction to web development. I approached this version of the project as an opportunity to apply some of the skills learned over the course of my experience at General Assembly. I chose to leave the game logic and functionality aspect of the project as is, to show the growth between my first development project and my most current.
 
 ### Tic Tac Toe Game built using
 * HTML
