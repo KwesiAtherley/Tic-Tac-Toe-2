@@ -6,17 +6,22 @@
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body class="container-fluid">
+  <nav class="navbar">
   <h1>Tic Tac Toe</h1>
+    <button type="button" class="btn signup-btn">Sign Up</button>
+    <button type="button" class="btn signin-btn">Sign In</button>
   <h5> To play this game please sign in to your account or create an account. Next please hit 'Start New Game' to begin.</h5>
+</nav>
 
-
-  <form id="sign-up" class="anything">
+  <form id="sign-up" class="hidden anything">
     <!-- <fieldset> -->
       <legend>Create Account</legend>
       <input type="email" name="credentials[email]" placeholder="Email">
@@ -26,19 +31,19 @@
     <!-- </fieldset> -->
   </form>
 
-  <form id="sign-in" class="anything">
+  <form id="sign-in" class="hidden anything">
     <!-- <fieldset> -->
       <legend>Sign in!</legend>
       <input type="email" name="credentials[email]" placeholder="Email">
       <input type="password" name="credentials[password]" placeholder="Password">
-      <input type="submit" value="Sign in!">
+      <input type="submit" class="btn" value="Sign in!">
     <!-- </fieldset> -->
   </form>
 
   <form id="sign-out" class="hidden anything">
     <!-- <fieldset> -->
       <legend>Sign Out!</legend>
-      <input type="submit" value="Sign out!">
+      <input type="submit" class="btn" value="Sign out!">
     <!-- </fieldset -->
   </form>
 
@@ -47,11 +52,14 @@
       <legend>Change Password!</legend>
       <input type="password" name="passwords[old]" placeholder="Old Password">
       <input type="password" name="passwords[new]" placeholder="New Password">
-      <input type="submit" value="Change Password!">
+      <input type="submit" class="btn" value="Change Password!">
     <!-- </fieldset> -->
   </form>
-  <button id="create-game" class="hidden fixUp">Start New Game</button>
-  <button id="get-game" class="hidden fixUp">Get Games</button>
+
+<div class="start-log">
+  <button id="create-game" class="hidden btn fixUp">Start New Game</button>
+  <button id="get-game" class="hidden btn fixUp">Get Games</button>
+</div>
 
 <div class="front-facing">
   <div id="player-turn"></div>
