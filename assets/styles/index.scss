@@ -1,6 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 
-$background-color: #fff;
+
 $font-color: #dfdfdf;
 $white: #fff;
 $grey: rgb(128, 128, 128);
@@ -8,45 +8,61 @@ $teal: rgb(0, 156, 161);
 $black: #000;
 $green: #406d43;
 $purple: #c5c0e6;
+$azureish-white: #d9f0ff;
+$winter-wizard: #a3d5ff;
+$light-sky-blue: #83c9f4;
+$toolbox: #6f73d2;
+$shadow-blue: #7681b3;
+
 
 .anything {
   margin: 0 auto;
-  text-align: center;
+  padding-bottom: 5px;
+  text-align: left;
 }
 
 body {
-  background-color: $purple;
+  background-color: $azureish-white;
 }
 
 .box {
   align-items: center;
-  border: 1px solid $white;
-  color: $font-color;
+  border: 1px solid $winter-wizard;
+  border-radius: 350px;
+  color: $light-sky-blue;
   display: flex;
+  font-family: 'Indie Flower', cursive;
   font-size: 50px;
-  height: 250px;
+  height: 100px;
   justify-content: center;
   width: 50px;
 
 
 }
 
+.btn {
+  background-color: $toolbox;
+}
+
 .front-facing {
+  font-family: 'Happy Monkey' , cursive;
   text-align: center;
 }
 
 .grey {
-  background-color: $black;
+  background-color: $toolbox;
 }
 
 // .teal {
 //   background-color: $teal;
 // }
 h1 {
+  font-family: 'Happy Monkey' , cursive;
   text-align: center;
 }
 
 h5 {
+  font-family: 'Happy Monkey' , cursive;
   text-align: center;
 }
 
@@ -57,4 +73,17 @@ button {
 
 .hidden {
   display: none;
+}
+
+legend {
+  font-family: 'Happy Monkey' , cursive;
+}
+
+.navbar {
+  background-color: $azureish-white;
+}
+
+.start-log {
+  align-items: center;
+  display: flex;
 }

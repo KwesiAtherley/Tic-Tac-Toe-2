@@ -14,6 +14,16 @@ $(() => {
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('click', authEvents.onSignOut)
+  $('.signup-btn').on('click', function () {
+    $('#sign-up').show()
+    $('#sign-in').hide()
+    $('#message').show(500)
+  })
+  $('.signin-btn').on('click', function () {
+    $('#sign-in').show()
+    $('#sign-up').hide()
+    $('message').show(500)
+  })
   $('.box').on('click', gameEvents.onUpdateMove)
   $('#create-game').on('click', gameEvents.onNewGame)
   $('#get-game').on('click', gameEvents.onGetGame)
