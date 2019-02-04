@@ -26,6 +26,8 @@ const signInSuccess = function (signInResponse) {
   $('#sign-out').removeClass('hidden')
   $('#sign-up').hide()
   $('#sign-in').hide()
+  $('.signup-btn').hide()
+  $('.signin-btn').hide()
   $('#game-box').removeClass('hidden')
   $('.fixUp').removeClass('hidden')
 }
@@ -45,6 +47,8 @@ const signOutSuccess = function () {
   $('#sign-out').addClass('hidden')
   $('#sign-up').hide()
   $('#sign-in').hide()
+  $('.signup-btn').show()
+  $('.signin-btn').show()
   $('.start-log').hide()
   $('#player-turn').hide()
   $('#game-message').hide()
